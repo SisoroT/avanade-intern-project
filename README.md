@@ -5,9 +5,9 @@ This project is a website that **allows users to find the average gas price in a
 **Azure Cloud** services were used to **host and connect everything together**.<br>
 
 The **back-end server hosting** was done in **python** using the **Flask** framework.
-**Azure Functions** coded in c# were the meat of the **back-end** by using **http and timer triggers** to **gather information through different APIs and webscraping**.<br>
+**Azure Functions** coded in C# were the meat of the **back-end** by using **http and timer triggers** to **gather information through different APIs and webscraping**.<br>
 
-The **front-end** was put together using a mix of **javascript, css, and html templates with the help of jinja**.
+The **front-end** was put together using a mix of **javascript, css, and html templates with the help of Jinja**.
 
 <p align="center">
   <img src="./assets/homepage.png"/>
