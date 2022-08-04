@@ -1,9 +1,12 @@
 # Intern Project
 
-This project is a website that **allows users to find the average gas price in a specific location in the U.S.** and compare the gas prices between different states.
-**Azure Cloud** services were used to **host and connect everything together**.
+This project is a website that **allows users to find the average gas price in a specific location in the U.S.** and compare the gas prices between different states.<br>
+
+**Azure Cloud** services were used to **host and connect everything together**.<br>
+
 The **back-end server hosting** was done in **python** using the **Flask** framework.
-**Azure Functions** coded in c# were the meat of the **back-end** by using **http and timer triggers** to **gather information through different APIs and webscraping**.
+**Azure Functions** coded in c# were the meat of the **back-end** by using **http and timer triggers** to **gather information through different APIs and webscraping**.<br>
+
 The **front-end** was put together using a mix of **javascript, css, and html templates with the help of jinja**.
 
 <p align="center">
@@ -72,4 +75,4 @@ This information is **submitted to our azure SQL database**.
 
 # Learn More
 
-Still Interested? Want to learn more about the specifics? [Watch us present our project to our internship cohort!](youtube.com)
+Still Interested? Want to learn more about the specifics? [Watch us present our project to our internship cohort!](https://youtu.be/7AOjZtoHZ2M)
