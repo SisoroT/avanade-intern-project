@@ -1,6 +1,10 @@
 # Intern Project
 
-This project is a website that allows users to find the average gas price in a specific location in the U.S. and compare the gas prices based on states. It also puts our knowledge of Azure services to use!
+This project is a website that **allows users to find the average gas price in a specific location in the U.S.** and compare the gas prices between different states.
+**Azure Cloud** services were used to **host and connect everything together**.
+The **back-end server hosting** was done in **python** using the **Flask** framework.
+**Azure Functions** coded in c# were the meat of the **back-end** by using **http and timer triggers** to **gather information through different APIs and webscraping**.
+The **front-end** was put together using a mix of **javascript, css, and html templates with the help of jinja**.
 
 <p align="center">
   <img src="./assets/homepage.png"/>
@@ -11,13 +15,8 @@ This project is a website that allows users to find the average gas price in a s
     -   [Search by Zipcode](#searching-by-zipcode)
     -   [Searching by Map](#searching-by-map)
     -   [Prices by State](#prices-by-state)
-
-<!-- -   [How it works](#using-the-website) -->
-<!--     -   [Azure](#searching-by-zipcode) -->
-<!--     -   [Flask](#prices-by-state) -->
-<!--     -   [Azure Functions](#searching-by-map) -->
-
 -   [Contact Page](#contact-page)
+-   [Want to Learn More?](#learn-more)
 
 # About Us
 
@@ -37,11 +36,11 @@ We also provide a **page with all the average state prices** in one place.
 
 ## Searching by Zipcode
 
-The **zipcode** page allows users to input any **US** zipcode and receive the **average gas prices** for:
+The **zipcode** page allows users to input any **U.S.** zipcode and receive the **average gas prices** for:
 
 -   the **given zipcode**
 -   the **state that zipcode is in**
--   the entire **US**
+-   the entire **U.S.**
 
 The user is also provided with the state and national average gas prices based on the data in our azure SQL database which updates prices automatically every Sunday at midnight.
 
@@ -49,14 +48,14 @@ https://user-images.githubusercontent.com/65800865/182936857-93442f45-97e1-4d83-
 
 ## Searching by Map
 
-The **map** page allows users to click anywhere within the US and **drop a pin** to get information.
+The **map** page allows users to click anywhere within the U.S. and **drop a pin** to get information.
 Users can **pan and zoom** to get to the precise location desired. The information mirrors that provided by the zipcode page.
 
 https://user-images.githubusercontent.com/65800865/182935891-48a47cc2-3598-4344-9ec4-af041ae2c7fd.mp4
 
 ## Prices by State
 
-The **state prices** page allows users to see **today's average gas prices** for **every US state plus Washington DC**.
+The **state prices** page allows users to see **today's average gas prices** for **every U.S. state plus Washington DC**.
 Users can **sort** the page in ascending or descending order either **alphabetically** or **by price** by clicking the label at the top of a column.
 
 https://user-images.githubusercontent.com/65800865/182937123-0e99c2ae-6239-4626-9b96-300f73767b4e.mp4
@@ -64,9 +63,13 @@ https://user-images.githubusercontent.com/65800865/182937123-0e99c2ae-6239-4626-
 # Contact Page
 
 The **contact us** page allows users to input their name and email to **sign up to an email list**.
-Users can also **submit questions, suggestions, or concerns.**
-This information is **submitted to our azure SQL database.**
+Users can also **submit questions, suggestions, or concerns**.
+This information is **submitted to our azure SQL database**.
 
 <p align="center">
   <img src="./assets/contact.png"/>
 </p>
+
+# Learn More
+
+Still Interested? Want to learn more about the specifics? [Watch us present our project to our internship cohort!](youtube.com)
