@@ -7,39 +7,34 @@ This project is a website that allows users to find the average gas price in a s
 </p>
 
 -   [Meet The Interns](#about-us)
--   [Features](#features)
--   [Getting started](#getting-started)
-    -   [Installation](#installation)
-        -   [Important note about versioning](#important-note-about-versioning)
-        -   [Using vim-plug](#using-vim-plug)
-        -   [Using packer](#using-packer)
-        -   [Nightly users](#nightly-users)
--   [Usage](#usage)
--   [Keybindings](#keybindings)
+-   [Using the Website](#using-the-website)
+    -   [Search by Zipcode](#searching-by-zipcode)
+    -   [Searching by Map](#searching-by-map)
+    -   [Prices by State](#prices-by-state)
 -   [Contact Page](#contact-page)
-
-https://user-images.githubusercontent.com/65800865/182935891-48a47cc2-3598-4344-9ec4-af041ae2c7fd.mp4
 
 # About Us
 
-# Features
+<p align="center">
+  <img src="./assets/about-us.png"/>
+</p>
 
-# Getting started
+# Using the Website
 
-## Installation
+### Searching by Zipcode
 
-### Important note about versioning
+https://user-images.githubusercontent.com/65800865/182936857-93442f45-97e1-4d83-974d-d3bbba21cbf5.mp4
 
-### Using vim-plug
+### Searching by Map
 
-```vim
-Plug 'phaazon/hop.nvim'
-```
+https://user-images.githubusercontent.com/65800865/182935891-48a47cc2-3598-4344-9ec4-af041ae2c7fd.mp4
 
-### Using packer
+### Prices by State
 
-### Nightly users
-
-# Usage
+https://user-images.githubusercontent.com/65800865/182937123-0e99c2ae-6239-4626-9b96-300f73767b4e.mp4
 
 # Contact Page
+
+<p align="center">
+  <img src="./assets/contact.png"/>
+</p>
