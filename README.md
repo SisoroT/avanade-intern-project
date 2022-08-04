@@ -75,4 +75,4 @@ This information is **submitted to our azure SQL database**.
 
 # Learn More
 
-Still Interested? Want to learn more about the specifics? [Watch us present our project to our internship cohort!](https://youtu.be/7AOjZtoHZ2M)
+Still Interested? Want to learn more about the specifics? [Watch us present our project to our internship cohort!](https://www.youtube.com/watch?v=X8IBP2kQn4c)
