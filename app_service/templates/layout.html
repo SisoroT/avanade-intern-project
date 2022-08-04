@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gavanade</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+    <div class="headcontainer">
+      <img src="static/pictures/Gavanade-Logo.png" alt="Gavanade Logo" class="logo" />
+      <strong>
+        <nav>
+          <div class="menu">
+            <a href="{{ url_for('home') }}" class="navcomponent">Home</a></li>
+            <a href="{{ url_for('about') }}" class="navcomponent">About Us</a></li>
+            <div class="dropdown">
+              <div class="dropbtn navcomponent">Gas Prices
+                <i class="fa fa-caret down"></i>
+              </div>
+              <div class="dropdown-content navcomponent">
+                <a href="{{ url_for('zip') }}" class="navcomponent dropcomponent">Search by Zipcode</a></li>
+                <a href="{{ url_for('map') }}" class="navcomponent dropcomponent">Search by Map</a></li>
+              </div>
+            </div>
+            <a href="{{ url_for('statelist') }}" class="navcomponent">Prices by State</a></li>
+            <a href="{{ url_for('contact') }}" class="navcomponent">Contact</a></li>
+            </ul>
+        </nav>
+      </strong>
+    </div>
+
+  <div class="container">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+
+</body>
+<footer>
+  <div class="row">
+    <ul>
+      <li><a target="_blank" href="{{ url_for('legal') }}" title="Terms and Conditions">Terms and Conditions</li>
+      <li><a target="_blank" href="{{ url_for('contact') }}" title="Contact">Contact Us</li>
+      <li class= "lastchild"><a target="_blank" href="{{ url_for('privacypolicy') }}"
+          title="Privacy Policy">Privacy Policy</li>
+    </ul>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,241 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/statetable.css') }}">
+{% endblock %}
+
+{% block content %}
+<div id = "pricebystatehead">
+    <h1> Gas Prices by State</h1>
+    <p><em>Click a column header once to sort table in ascending order, twice for descending.</em></p>
+</div>
+<div class="tablecontainer">
+    <table id="pricelist">
+        <tr>
+        <!--When a header is clicked, run the sortTable function, with a parameter,
+        0 for sorting by names, 1 for sorting by country: -->
+        <strong>
+            <th onclick="sortTable(0)">State</th>
+            <th onclick="sortTable(1)">Average Gas Price</th>
+        </strong>
+        </tr>
+        <ul class=flashes>
+            {% for message in get_flashed_messages() %}
+            
+            {% set msg_split = message.split("`") %}
+
+        <tr>
+            <td> {{ msg_split[0] }} </td>
+            <td> {{ msg_split[1] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[2] }} </td>
+            <td> {{ msg_split[3] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[4] }} </td>
+            <td> {{ msg_split[5] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[6] }} </td>
+            <td> {{ msg_split[7] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[8] }} </td>
+            <td> {{ msg_split[9] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[10] }} </td>
+            <td> {{ msg_split[11] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[12] }} </td>
+            <td> {{ msg_split[13] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[14] }} </td>
+            <td> {{ msg_split[15] }} </td>
+        </tr>
+        <tr> 
+            <td> {{ msg_split[16] }} </td>
+            <td> {{ msg_split[17] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[18] }} </td>
+            <td> {{ msg_split[19] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[20] }} </td>
+            <td> {{ msg_split[21] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[22] }} </td>
+            <td> {{ msg_split[23] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[24] }} </td>
+            <td> {{ msg_split[25] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[26] }} </td>
+            <td> {{ msg_split[27] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[28] }} </td>
+            <td> {{ msg_split[29] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[30] }} </td>
+            <td> {{ msg_split[31] }} </td>
+        </tr>
+        <tr>  
+            <td> {{ msg_split[32] }} </td>
+            <td> {{ msg_split[33] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[34] }} </td>
+            <td> {{ msg_split[35] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[36] }} </td>
+            <td> {{ msg_split[37] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[38] }} </td>
+            <td> {{ msg_split[39] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[40] }} </td>
+            <td> {{ msg_split[41] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[42] }} </td>
+            <td> {{ msg_split[43] }} </td>
+        </tr>
+        <tr>   
+            <td> {{ msg_split[44] }} </td>
+            <td> {{ msg_split[45] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[46] }} </td>
+            <td> {{ msg_split[47] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[48] }} </td>
+            <td> {{ msg_split[49] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[50] }} </td>
+            <td> {{ msg_split[51] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[52] }} </td>
+            <td> {{ msg_split[53] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[54] }} </td>
+            <td> {{ msg_split[55] }} </td>
+        </tr>
+        <tr>  
+            <td> {{ msg_split[56] }} </td>
+            <td> {{ msg_split[57] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[58] }} </td>
+            <td> {{ msg_split[59] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[60] }} </td>
+            <td> {{ msg_split[61] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[62] }} </td>
+            <td> {{ msg_split[63] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[64] }} </td>
+            <td> {{ msg_split[65] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[66] }} </td>
+            <td> {{ msg_split[67] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[68] }} </td>
+            <td> {{ msg_split[69] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[70] }} </td>
+            <td> {{ msg_split[71] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[72] }} </td>
+            <td> {{ msg_split[73] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[74] }} </td>
+            <td> {{ msg_split[75] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[76] }} </td>
+            <td> {{ msg_split[77] }} </td>
+        </tr>
+        <tr>    
+            <td> {{ msg_split[78] }} </td>
+            <td> {{ msg_split[79] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[80] }} </td>
+            <td> {{ msg_split[81] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[82] }} </td>
+            <td> {{ msg_split[83] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[84] }} </td>
+            <td> {{ msg_split[85] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[86] }} </td>
+            <td> {{ msg_split[87] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[88] }} </td>
+            <td> {{ msg_split[89] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[90] }} </td>
+            <td> {{ msg_split[91] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[92] }} </td>
+            <td> {{ msg_split[93] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[94] }} </td>
+            <td> {{ msg_split[95] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[96] }} </td>
+            <td> {{ msg_split[97] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[98] }} </td>
+            <td> {{ msg_split[99] }} </td>
+        </tr>
+        <tr>
+            <td> {{ msg_split[100] }} </td>
+            <td> {{ msg_split[101] }} </td>
+        </tr>
+            {% else %}
+
+            <li>{{ message }}</li>
+            
+            {% endfor %}
+    </table>
+
+        <script src="{{ url_for('static', filename='js/tablesort.js') }}">
+        </script>
+</div>
+{% endblock %}

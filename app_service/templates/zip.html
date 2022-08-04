@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="gassearch">
+  <div class="searchcontainer">
+    <h1>Gas Price Search</h1>
+    <p> Search for gas prices in your area based on your zipcode</p>
+    <form action="{{url_for('search_zipcode')}}" method="post" class="zipsearch" autocomplete="off">
+      <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode">
+      <br>
+      <button type="submit" id="zipsearchbutton" name="search">Search</button>
+    </form>
+
+    <ul class=flashes>
+      {% for message in get_flashed_messages() %}
+
+      {% if message[0] in "0123456789" %}
+
+      {% set msg_split = message.split("`") %}
+
+      <li>The average gas price for {{ msg_split[0] }} ({{ msg_split[1] }},
+        {{ msg_split[2] }}) is {{ msg_split[3] }}</li>
+      <li>The average gas price for {{ msg_split[2] }} is {{ msg_split[4] }}</li>
+      <li>The national average gas price is {{ msg_split[5] }}</li>
+      <br>
+      <li>Previous prices were last updated on {{ msg_split[8] }}.</li>
+      <li>The previous average for {{ msg_split[2] }} was ${{ msg_split[6] }}.</li>
+      <li>The previous national average was ${{ msg_split[7] }}.</li>
+
+  
+      {% else %}
+
+      <li>{{ message }}</li>
+
+      {% endif %}
+
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
