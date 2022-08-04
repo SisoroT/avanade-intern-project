@@ -18,9 +18,7 @@ This project is a website that allows users to find the average gas price in a s
 -   [Keybindings](#keybindings)
 -   [Contact Page](#contact-page)
 
-<p align="center">
-  <img src="./assets/map.mp4"/>
-</p>
+https://user-images.githubusercontent.com/65800865/182935891-48a47cc2-3598-4344-9ec4-af041ae2c7fd.mp4
 
 # About Us
 
