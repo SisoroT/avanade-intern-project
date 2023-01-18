@@ -13,7 +13,7 @@ The **front-end** was put together using a mix of **javascript, css, and html te
   <img src="./assets/homepage.png"/>
 </p>
 
--   [Meet The Interns](#about-us)
+-   [Meet the Interns](#about-us)
 -   [Using the Website](#using-the-website)
     -   [Search by Zipcode](#searching-by-zipcode)
     -   [Searching by Map](#searching-by-map)
